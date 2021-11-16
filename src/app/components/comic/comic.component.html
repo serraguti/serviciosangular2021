@@ -1,0 +1,14 @@
+<div>
+    <h1 style="color:blue">{{comic.titulo}}</h1>
+    <button (click)="updateComic()" style="background-color: blue; color:white">
+        Modificar comic
+    </button>
+    <button (click)="deleteComic()" style="background-color: red; color:white">
+        Eliminar comic
+    </button>
+    <button (click)="marcarFavorito()">
+        Seleccionar Favorito
+    </button>
+    <img src="{{comic.imagen}}" style="width:150px; height: 250px;"/>
+    <h2 style="color:red">{{comic.descripcion}}</h2>
+</div>
