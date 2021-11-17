@@ -1,0 +1,14 @@
+<h1>Maestro Detalle Empleados Routing</h1>
+<div *ngIf="empleados">
+    <ul  class="list-group">
+        <li class="list-group-item"
+            *ngFor="let emp of empleados">
+            {{emp.apellido}}
+            | <a class="btn btn-success"
+                [routerLink]="['/detalleempleado', emp.idEmpleado]">
+                Detalles
+            </a>
+        </li>
+    </ul>
+</div>
+
