@@ -12,4 +12,16 @@ export class ServiceEmpleados{
         var url = Global.urlapiempleados + request;
         return this._http.get(url);
     }
+
+    getOficios(): Observable<any>{
+        var request = "/api/empleados/oficios";
+        var url = Global.urlapiempleados + request;
+        return this._http.get(url);
+    }
+
+    getEmpleadosOficio(oficio: string): Observable<any>{
+        var request = "api/empleados/empleadosoficio/" + oficio;
+        var url = Global.urlapiempleados + request;
+        return this._http.get(url);
+    }
 }

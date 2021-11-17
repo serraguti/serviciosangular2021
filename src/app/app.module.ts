@@ -15,6 +15,7 @@ import { PersonasapiComponent } from './components/personasapi/personasapi.compo
 import { ServicePersonas } from './services/servicepersonas';
 import { ServiceEmpleados } from './services/empleado.service';
 import { EmpleadossalarioComponent } from './components/empleadossalario/empleadossalario.component';
+import { EmpleadosoficioComponent } from './components/empleadosoficio/empleadosoficio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EmpleadossalarioComponent } from './components/empleadossalario/emplead
     MenuComponent,
     ComicsinyeccionComponent,
     PersonasapiComponent,
-    EmpleadossalarioComponent
+    EmpleadossalarioComponent,
+    EmpleadosoficioComponent
   ],
   imports: [
     HttpClientModule,
